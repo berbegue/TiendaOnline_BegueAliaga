@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif; }
+
+.listaProductos .producto1, .listaProductos .producto2, .listaProductos .producto3, .listaProductos .producto4, .listaProductos .producto5, .listaProductos .producto6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s; }
+
+body {
+  background-image: url(../images/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body header {
+    background-color: #292929; }
+    body header nav ul {
+      display: flex;
+      background-color: #292929;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center; }
+      body header nav ul li {
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin: 0.5rem; }
+    body header nav img {
+      height: 4rem;
+      transition: 1s; }
+    body header nav img:hover {
+      transform: scale(1.1); }
+    body header nav .nav-link {
+      color: #d1d1aa; }
+    body header nav .nav-link:hover {
+      color: white; }
+  body main h1 {
+    text-transform: uppercase;
+    color: #d1d1aa;
+    grid-area: titulo;
+    text-align: center; }
+  body main div.container1 div.container2 {
+    width: 20%;
+    height: 100%;
+    padding: 0 2rem 0 2rem; }
+    body main div.container1 div.container2 div.carousel-inner {
+      width: 100%;
+      height: 100%; }
+      body main div.container1 div.container2 div.carousel-inner div.carousel-item {
+        width: 100%;
+        height: 100%; }
+  body main div.subMenu {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center; }
+    body main div.subMenu li{
+      list-style: none;
+    }
+    body main div.subMenu li img {
+      width: 12rem;
+      height: 12rem; }
+  body main .ultIngresos {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-areas: "titulo2 titulo2 titulo2 titulo2 titulo2"
+ "izq2 ingreso1 ingreso2 ingreso3 der2";
+    align-items: center;
+    gap: 1rem; }
+    body main .ultIngresos h2 {
+      grid-area: titulo2;
+      text-transform: uppercase;
+      color: #d1d1aa;
+      text-align: center; }
+    body main .ultIngresos .flecha img {
+      width: 1.5rem;
+      height: 1.5rem; }
+    body main .ultIngresos #f1 {
+      grid-area: izq2;
+      justify-self: end; }
+    body main .ultIngresos #f2 {
+      grid-area: der2;
+      justify-self: start; }
+    body main .ultIngresos .ingreso img {
+      width: 10rem;
+      height: 10rem; }
+    body main .ultIngresos #i1 {
+      grid-area: ingreso1;
+      justify-self: center; }
+    body main .ultIngresos #i2 {
+      grid-area: ingreso2;
+      justify-self: center; }
+    body main .ultIngresos #i3 {
+      grid-area: ingreso3;
+      justify-self: center; }
+  body footer {
+    margin: 2rem;
+    text-align: center; }
+    body footer img {
+      width: 2rem;
+      height: 2rem; }
+    body footer h3 {
+      font-size: 1rem;
+      color: #d1d1aa; }
+
+.listaProductos {
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 4rem;
+  grid-template-areas: "orden orden orden"
+ "p1 p2 p3"
+ "p4 p5 p6";
+  align-items: center;
+  justify-content: center; }
+  .listaProductos img {
+    width: 10rem;
+    height: 10rem; }
+  .listaProductos h3 {
+    color: #d1d1aa;
+    text-align: center;
+    font-size: 1rem; }
+  .listaProductos h4 {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #d1d1aa; }
+  .listaProductos .producto1 {
+    grid-area: p1; }
+  .listaProductos .producto1:hover {
+    transform: scale(1.1); }
+  .listaProductos .producto2 {
+    grid-area: p2; }
+  .listaProductos .producto2:hover {
+    transform: scale(1.1); }
+  .listaProductos .producto3 {
+    grid-area: p3; }
+  .listaProductos .producto3:hover {
+    transform: scale(1.1); }
+  .listaProductos .producto4 {
+    grid-area: p4; }
+  .listaProductos .producto4:hover {
+    transform: scale(1.1); }
+  .listaProductos .producto5 {
+    grid-area: p5; }
+  .listaProductos .producto5:hover {
+    transform: scale(1.1); }
+  .listaProductos .producto6 {
+    grid-area: p6; }
+  .listaProductos .producto6:hover {
+    transform: scale(1.1); }
+  .listaProductos .ordenador {
+    grid-area: orden;
+    text-align: right;
+    margin: 1rem; }
+
+form span {
+  color: #d1d1aa; }
+
+.btn-instagram {
+  background-color: #f87f2e; }
+
+.btn-facebook {
+  background-color: #1010b9; }
+
+@media screen and (max-width: 1024px){
+    nav ul li {
+        font-size: 1rem;
+        margin: 0.3rem;
+    }
+
+    body main div.subMenu{
+        display: none;
+    }
+    .listaProductos{
+        grid-template-areas: "orden orden"
+                             "p1 p2 "
+                             "p3 p4"
+                             "p5 p6";
+    }
+    body main .ultIngresos .ingreso img{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    .flecha img{
+        height: 0.5rem;
+        width: 0.5rem;
+    
+    
+    }
+    footer h3{
+        font-size: 0.8rem ;
+    }
+}
+@media  screen and (max-width:600px) {
+    nav ul li {
+        font-size: 0.9rem;
+        margin: 0.2rem;
+    }
+    nav ul input{
+        display: none;
+    }
+    .listaProductos{
+        grid-template-areas: "orden"
+                             "p1"
+                             "p2"
+                             "p3"
+                             "p4"
+                             "p5"
+                             "p6";
+                             
+    }
+  
+    body main .ultIngresos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "titulo2 titulo2 titulo2"
+                             "izq2 ingreso1 der2";
+        column-gap: 0.5rem;
+        
+    }
+    body main .ultIngresos #i2{
+        display: none;
+    }
+    body main .ultIngresos #i3{
+        display: none;
+    }
+    footer h3{
+        font-size: 0.5rem ;
+    }
+}
