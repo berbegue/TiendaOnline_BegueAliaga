@@ -229,6 +229,7 @@ form {
     display: flex;
     color: $color-secundario;
     text-align:justify;
+    align-items: center;
     margin: 2rem;
     padding: 5rem;
     img{
@@ -275,6 +276,13 @@ $redes: (
             input{
                 @include sizes(5rem, 30rem); 
             }
+        }
+    }
+    .nosotros{
+        margin: 1rem;
+        img{
+            margin-left: 2rem;
+            @include sizes(10rem, 10rem); 
         }
     }
     footer h3{
@@ -327,6 +335,12 @@ $redes: (
             input{
                 @include sizes(5rem, 15rem); 
             }
+        }
+    }
+    .nosotros{
+        
+        img{
+           @include sizes(6rem, 6rem); 
         }
     }
 }
