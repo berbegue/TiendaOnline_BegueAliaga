@@ -212,6 +212,12 @@ form {
   form .consulta input {
     width: 15rem;
     height: 5rem; }
-  .nosotros img {
-    width: 6rem;
-    height: 6rem; } }
+  .nosotros {
+    display: block;
+    margin: 1rem;
+    padding: 0rem;
+    text-align: center; }
+    .nosotros img {
+      width: 5rem;
+      height: 5rem;
+      margin-left: 0.2rem; } }

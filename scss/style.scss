@@ -338,9 +338,13 @@ $redes: (
         }
     }
     .nosotros{
-        
+        display: block;
+        margin: 1rem;
+        padding: 0rem;
+        text-align: center;
         img{
-           @include sizes(6rem, 6rem); 
+            @include sizes(5rem, 5rem);
+            margin-left: 0.2rem;
         }
     }
 }
